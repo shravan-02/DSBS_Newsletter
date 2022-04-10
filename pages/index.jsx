@@ -13,7 +13,7 @@ export default function Home() {
         style={{ backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')" }}
       ></div>
         </div>
-          <div className="col-span-1 lg:col-span-4 sm:ml-10 sm:mr-12 sm:pr-10 sm:pl-10">
+          <div className="col-span-1 lg:col-span-4 ml-10 mr-12 pr-10 pl-10 -mt-10 lg:mt-0 lg:-ml-12 lg:-mr-12">
             <div className='lg:sticky relative '>
               <Categories />
             </div>
