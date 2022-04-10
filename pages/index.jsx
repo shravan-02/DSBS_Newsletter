@@ -6,18 +6,18 @@ import HomeFacts from '../components/HomeFacts'
 export default function Home() {
   return (
     <>
-    <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 -ml-8 pr-10 mr-12">
-        <div className='lg:col-span-8 col-span-1'>
+    <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:-ml-8 lg:pr-10 lg:mr-12">
+        <div className='lg:col-span-8 col-span-1 '>
         <div
         className="mr-30 mx-10 mb-10 h-screen border-solid bg-contain bg-center bg-no-repeat	"
         style={{ backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')" }}
       ></div>
         </div>
-        <div className="col-span-1 lg:col-span-4">
-          <div className='lg:sticky relative '>
-            <Categories />
+          <div className="col-span-1 lg:col-span-4 sm:ml-10 sm:mr-12 sm:pr-10 sm:pl-10">
+            <div className='lg:sticky relative '>
+              <Categories />
+            </div>
           </div>
-        </div>
       </div>
 
 
