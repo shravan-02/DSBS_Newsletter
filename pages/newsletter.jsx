@@ -14,7 +14,7 @@ export default function newsletter ({ posts }) {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className='lg:sticky relative top-8'>
-            {/* <Categories /> */}
+            <Categories />
             <PostWidget />
             
           </div>
