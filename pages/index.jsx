@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { PostCard, Categories, PostWidget } from '../components'
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
@@ -6,16 +5,13 @@ import HomeFacts from '../components/HomeFacts'
 
 export default function Home({ posts }) {
   return (
-    <div className="container mx-auto mb-8 px-10">
-      <Head>
-        <title>Data Chronicle</title>
-        <link rel="icon" href="./SRM.jpg" />
-      </Head>
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-        <div className="col-span-1 lg:col-span-8">
+    <>
+    
+        <div className='h-screen bg-contain bg-center mx-10 mr-30 bg-no-repeat mb-10 border-solid	' style={{backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')"}}></div>
+          {/* Older Front page with content */}
           {/* Insert The Description of newsletter here */}
-          <div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
-            <h1 className="bg-clip-text text-center text-3xl font-semibold leading-loose ">
+          {/*<div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
+             <h1 className="bg-clip-text text-center text-3xl font-semibold leading-loose ">
               OFFICIAL NEWSLETTER
             </h1>
             <h1 className="text-center text-xl font-medium leading-loose">
@@ -81,9 +77,8 @@ export default function Home({ posts }) {
           <div className="absolute top-8 lg:sticky">
             <Categories />
             <HomeFacts />
-          </div>  
-        </div>
-      </div>
-    </div>
+          </div>   */}
+        
+    </>
   )
 }

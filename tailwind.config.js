@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'SRMImage' : "url('/public/SRMRoom.png')",
-      }
+        SRMImage: "url('/public/SRMRoom.png')",
+        DCBG: "url('/public/page1.png')",
+      },
     },
   },
   plugins: [],
