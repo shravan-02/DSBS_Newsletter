@@ -3,14 +3,44 @@ import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
 import HomeFacts from '../components/HomeFacts'
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
-    
-        <div className='h-screen bg-contain bg-center mx-10 mr-30 bg-no-repeat mb-10 border-solid	' style={{backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')"}}></div>
-          {/* Older Front page with content */}
-          {/* Insert The Description of newsletter here */}
-          {/*<div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
+    <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 -ml-8 pr-10 mr-12">
+        <div className='lg:col-span-8 col-span-1'>
+        <div
+        className="mr-30 mx-10 mb-10 h-screen border-solid bg-contain bg-center bg-no-repeat	"
+        style={{ backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')" }}
+      ></div>
+        </div>
+        <div className="col-span-1 lg:col-span-4">
+          <div className='lg:sticky relative '>
+            <Categories />
+          </div>
+        </div>
+      </div>
+
+
+      {/* -------------------------------------------------------------------------------- */}
+
+      {/* New Homepage */}
+      {/* <div
+        className="mr-30 mx-10 mb-10 h-screen border-solid bg-contain bg-center bg-no-repeat	"
+        style={{ backgroundImage: "url('https://i.imgur.com/u3JoOKi.png')" }}
+      ></div>
+      <div className="col-span-1 lg:col-span-4">
+        <div className="absolute top-8 lg:sticky">
+          <Categories />
+          <HomeFacts />
+        </div>
+      </div> */}
+
+
+
+      {/* ------------------------------------------------------------------------------- */}
+      {/* Older Front page with content */}
+      {/* Insert The Description of newsletter here */}
+      {/*<div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
              <h1 className="bg-clip-text text-center text-3xl font-semibold leading-loose ">
               OFFICIAL NEWSLETTER
             </h1>
@@ -78,7 +108,6 @@ export default function Home({ posts }) {
             <Categories />
             <HomeFacts />
           </div>   */}
-        
     </>
   )
 }
