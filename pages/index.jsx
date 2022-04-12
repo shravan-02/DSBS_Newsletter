@@ -1,4 +1,4 @@
-import { PostCard, Categories, PostWidget } from '../components'
+import { PostCard, Categories, PostWidget, Comments, CommentsForm,  } from '../components'
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
 import HomeFacts from '../components/HomeFacts'
@@ -19,6 +19,7 @@ export default function Home() {
             </div>
           </div>
       </div>
+
 
 
       {/* -------------------------------------------------------------------------------- */}

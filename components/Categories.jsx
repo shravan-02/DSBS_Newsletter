@@ -16,7 +16,7 @@ const Categories = () => {
       <div className="grid grid-cols-2">
       {categories.map((category) => (
         <Link key={category.slug} href={`/category/${category.slug}`}>
-          <span className='cursor-pointer block pb-3 mb-3 text-black hover:font-semibold'>
+          <span className='cursor-pointer block pb-3 mb-3 text-black hover:font-semibold sm:mx-10'>
             {category.name}
           </span>
         </Link>

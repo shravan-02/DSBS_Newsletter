@@ -70,7 +70,7 @@ const PostDetail = ({ post }) => {
       </div>
       <div className="px-4 lg:px-0">
         <div className="mb-8 flex w-full items-center">
-          <div className="mb-4 mr-8 flex w-full items-center lg:mb-0 lg:w-auto">
+          {/* <div className="mb-4 mr-8 flex w-full items-center lg:mb-0 lg:w-auto">
             <img
               alt={post.author.name}
               height="30px"
@@ -81,7 +81,7 @@ const PostDetail = ({ post }) => {
             <p className="ml-2 inline align-middle text-lg text-gray-700">
               {post.author.name}
             </p>
-          </div>
+          </div> */}
           <div className="font-medium text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
